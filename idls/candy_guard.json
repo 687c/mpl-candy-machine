@@ -917,6 +917,26 @@
       }
     },
     {
+      "name": "Memo",
+      "docs": [
+        "Guard that logs the items minted from our candy machine upon each mint and the minter address.",
+        "",
+        "List of accounts required:",
+        "",
+        "0. `[]` Account minting the NFT.",
+        ""
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "minter",
+            "type": "publicKey"
+          }
+        ]
+      }
+    },
+    {
       "name": "MintLimit",
       "docs": [
         "Gaurd to set a limit of mints per wallet.",
@@ -1548,6 +1568,17 @@
                 "defined": "Token2022Payment"
               }
             }
+          },
+          {
+            "name": "memo",
+            "docs": [
+              "Logs items redeemed and the minter address"
+            ],
+            "type": {
+              "option": {
+                "defined": "Memo"
+              }
+            }
           }
         ]
       }
@@ -1639,6 +1670,9 @@
           },
           {
             "name": "Token2022Payment"
+          },
+          {
+            "name": "Memo"
           }
         ]
       }
@@ -1907,7 +1941,7 @@
     }
   ],
   "metadata": {
-    "address": "Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g",
+    "address": "ueVvKsazojUQF3ytBmTsCV6C2diRr1GGziRknbw9sVb",
     "origin": "anchor",
     "binaryVersion": "0.27.0",
     "libVersion": "0.28.0"

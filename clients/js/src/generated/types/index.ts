@@ -22,6 +22,7 @@ export * from './freezeTokenPayment';
 export * from './gatekeeper';
 export * from './guardType';
 export * from './hiddenSettings';
+export * from './memo';
 export * from './mintLimit';
 export * from './nftBurn';
 export * from './nftGate';

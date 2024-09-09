@@ -64,7 +64,7 @@ export function wrap(
   // Program ID.
   const programId = context.programs.getPublicKey(
     'mplCandyGuard',
-    'Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g'
+    'ueVvKsazojUQF3ytBmTsCV6C2diRr1GGziRknbw9sVb'
   );
 
   // Accounts.

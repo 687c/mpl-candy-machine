@@ -21,7 +21,7 @@ generateIdl({
 generateIdl({
   generator: "anchor",
   programName: "candy_guard",
-  programId: "Guard1JwRhJkVH6XZhzoYxeBVQe872VH6QggF4BWmS9g",
+  programId: "ueVvKsazojUQF3ytBmTsCV6C2diRr1GGziRknbw9sVb",
   idlDir,
   binaryInstallDir,
   programDir: path.join(programDir, "candy-guard", "program"),

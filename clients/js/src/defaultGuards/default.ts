@@ -16,6 +16,8 @@ import {
   FreezeTokenPaymentArgs,
   Gatekeeper,
   GatekeeperArgs,
+  Memo,
+  MemoArgs,
   MintLimit,
   MintLimitArgs,
   NftBurn,
@@ -60,6 +62,7 @@ import {
   FreezeTokenPaymentRouteArgs,
 } from './freezeTokenPayment';
 import { GatekeeperMintArgs } from './gatekeeper';
+import { MemoGuardMintArgs } from './memo';
 import { MintLimitMintArgs } from './mintLimit';
 import { NftBurnMintArgs } from './nftBurn';
 import { NftGateMintArgs } from './nftGate';
@@ -96,6 +99,7 @@ export type DefaultGuardSetArgs = GuardSetArgs & {
   programGate: OptionOrNullable<ProgramGateArgs>;
   allocation: OptionOrNullable<AllocationArgs>;
   token2022Payment: OptionOrNullable<Token2022PaymentArgs>;
+  memo: OptionOrNullable<MemoArgs>;
 };
 
 /**
@@ -123,6 +127,7 @@ export type DefaultGuardSet = GuardSet & {
   programGate: Option<ProgramGate>;
   allocation: Option<Allocation>;
   token2022Payment: Option<Token2022Payment>;
+  memo: Option<Memo>;
 };
 
 /**
@@ -150,6 +155,7 @@ export type DefaultGuardSetMintArgs = GuardSetMintArgs & {
   // programGate: no mint settings
   allocation: OptionOrNullable<AllocationMintArgs>;
   token2022Payment: OptionOrNullable<Token2022PaymentMintArgs>;
+  Memo: OptionOrNullable<MemoGuardMintArgs>;
 };
 
 /**
@@ -202,6 +208,7 @@ export const defaultCandyGuardNames: string[] = [
   'programGate',
   'allocation',
   'token2022Payment',
+  'memo',
 ];
 
 /** @internal */
